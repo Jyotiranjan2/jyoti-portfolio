@@ -209,6 +209,30 @@ export const portfolioData = {
       type: "Competition"
     },
     {
+      title: "Droid Blitz Amphibious Robo Competition",
+      description: "Finalist at Sahiti 2025, IIT Kharagpur - Amphibious robotics challenge",
+      year: "2025",
+      type: "Competition"
+    },
+    {
+      title: "NCIIPC Pentathon 2024",
+      description: "Secured Top 350 (AICTE CTF) - National cybersecurity competition",
+      year: "2024",
+      type: "Competition"
+    },
+    {
+      title: "Robo War Winner",
+      description: "1st Place Winner at GIET University TechFest - Robotics competition",
+      year: "2025",
+      type: "Competition"
+    },
+    {
+      title: "Line Follower Competition",
+      description: "2nd Place - Secured 2nd place in Line Follower Robotics Event at Tech Fest 2024",
+      year: "2024",
+      type: "Competition"
+    },
+    {
       title: "Cybersecurity Research Publication",
       description: "Co-authored research on automated vulnerability detection in Python applications",
       year: "2024",
