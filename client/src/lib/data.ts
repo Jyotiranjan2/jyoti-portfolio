@@ -2,8 +2,8 @@ export const portfolioData = {
   personalInfo: {
     name: "Jyoti Ranjan Barik",
     title: "Cybersecurity Enthusiast",
-    description: "Aspiring cybersecurity analyst with expertise in threat detection, vulnerability assessment, and security operations. Certified enthusiast with hands-on experience in modern security frameworks.",
-    email: "jyoti.ranjan@example.com",
+    description: "Aspiring cybersecurity enthusiast with expertise in threat detection, vulnerability assessment, and security operations. Certified enthusiast with hands-on experience in modern security frameworks.",
+    email: "jyotianjanbarik@gmail.com",
     linkedin: "https://www.linkedin.com/in/jyoti-ranjan-barik-131712284/",
     github: "https://github.com/Jyotiranjan2",
     tryhackme: "https://tryhackme.com/p/Darkyhunter",
