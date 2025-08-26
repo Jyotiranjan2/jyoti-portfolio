@@ -82,12 +82,72 @@
   }
 
   .card-hover {
-    @apply transition-all duration-300 ease-in-out;
+    @apply transition-all duration-500 ease-in-out transform-gpu;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
   }
 
   .card-hover:hover {
-    @apply -translate-y-1 shadow-2xl;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+    @apply -translate-y-3;
+    transform: perspective(1000px) rotateX(-2deg) rotateY(2deg) translateY(-12px);
+    box-shadow: 
+      0 25px 50px -5px rgba(0, 0, 0, 0.4),
+      0 0 40px rgba(59, 130, 246, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    animation: cardFloat 2s ease-in-out infinite;
+  }
+
+  .card-flashy {
+    @apply transition-all duration-700 ease-in-out transform-gpu;
+    transform: perspective(1200px) rotateX(0deg) rotateY(0deg);
+    background: linear-gradient(145deg, rgba(255,255,255,0.1), rgba(255,255,255,0.02));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .card-flashy:hover {
+    @apply -translate-y-4;
+    transform: perspective(1200px) rotateX(-5deg) rotateY(5deg) translateY(-16px);
+    box-shadow: 
+      0 35px 60px -10px rgba(0, 0, 0, 0.5),
+      0 0 60px rgba(34, 197, 94, 0.2),
+      0 0 100px rgba(59, 130, 246, 0.1),
+      inset 0 2px 0 rgba(255, 255, 255, 0.2);
+    background: linear-gradient(145deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05));
+    animation: cardFloatIntense 1.5s ease-in-out infinite;
+  }
+
+  .animated-bg {
+    background: 
+      radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(34, 197, 94, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 60%, rgba(168, 85, 247, 0.05) 0%, transparent 50%),
+      linear-gradient(135deg, hsl(222, 47%, 11%) 0%, hsl(215, 28%, 12%) 100%);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+  }
+
+  .floating-particles {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .floating-particles::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      radial-gradient(2px 2px at 20px 30px, rgba(59, 130, 246, 0.3), transparent),
+      radial-gradient(2px 2px at 40px 70px, rgba(34, 197, 94, 0.3), transparent),
+      radial-gradient(1px 1px at 90px 40px, rgba(168, 85, 247, 0.3), transparent),
+      radial-gradient(1px 1px at 130px 80px, rgba(34, 197, 94, 0.3), transparent);
+    background-repeat: repeat;
+    background-size: 200px 100px;
+    animation: particleFloat 20s linear infinite;
+    pointer-events: none;
+    opacity: 0.6;
   }
 
   .glow-blue {
@@ -154,6 +214,66 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes cardFloat {
+  0%, 100% {
+    transform: perspective(1000px) rotateX(-2deg) rotateY(2deg) translateY(-12px);
+  }
+  50% {
+    transform: perspective(1000px) rotateX(-1deg) rotateY(1deg) translateY(-16px);
+  }
+}
+
+@keyframes cardFloatIntense {
+  0%, 100% {
+    transform: perspective(1200px) rotateX(-5deg) rotateY(5deg) translateY(-16px);
+  }
+  33% {
+    transform: perspective(1200px) rotateX(-3deg) rotateY(3deg) translateY(-20px);
+  }
+  66% {
+    transform: perspective(1200px) rotateX(-7deg) rotateY(7deg) translateY(-12px);
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes particleFloat {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-100px) rotate(360deg);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(34, 197, 94, 0.6);
+  }
+}
+
+@keyframes terminalBlink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
   }
 }
 

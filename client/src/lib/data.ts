@@ -4,8 +4,9 @@ export const portfolioData = {
     title: "Cybersecurity Enthusiast",
     description: "Aspiring cybersecurity analyst with expertise in threat detection, vulnerability assessment, and security operations. Certified enthusiast with hands-on experience in modern security frameworks.",
     email: "jyoti.ranjan@example.com",
-    linkedin: "linkedin.com/in/jyoti-ranjan-barik",
-    github: "github.com/jyotiranjanbarik",
+    linkedin: "https://www.linkedin.com/in/jyoti-ranjan-barik-131712284/",
+    github: "https://github.com/Jyotiranjan2",
+    tryhackme: "https://tryhackme.com/p/Darkyhunter",
     location: "India"
   },
 

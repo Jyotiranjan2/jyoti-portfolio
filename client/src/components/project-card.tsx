@@ -10,7 +10,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ title, description, category, year, technologies, color, icon }: ProjectCardProps) {
   return (
-    <div className={`bg-gradient-to-br ${color} rounded-xl p-6 card-hover`} data-testid={`project-${title.toLowerCase().replace(/\s+/g, '-')}`}>
+    <div className={`bg-gradient-to-br ${color} rounded-xl p-6 card-flashy group relative overflow-hidden`} data-testid={`project-${title.toLowerCase().replace(/\s+/g, '-')}`}>
       <div className="flex items-center space-x-2 mb-4">
         <div className="w-3 h-3 bg-red-400 rounded-full"></div>
         <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
@@ -37,6 +37,17 @@ export default function ProjectCard({ title, description, category, year, techno
           ))}
         </div>
       </div>
+
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/10 to-transparent"></div>
+        <div className="absolute bottom-0 right-0 w-24 h-24 opacity-30 text-6xl flex items-center justify-center">
+          {icon}
+        </div>
+      </div>
+
+      {/* Hover Effect Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
     </div>
   );
 }

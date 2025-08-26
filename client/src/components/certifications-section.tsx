@@ -24,7 +24,7 @@ export default function CertificationsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {portfolioData.certifications.map((cert, index) => (
-            <Card key={index} className="bg-card border-border card-hover" data-testid={`certification-${index}`}>
+            <Card key={index} className="bg-card border-border card-flashy" data-testid={`certification-${index}`}>
               <CardHeader>
                 <CardTitle className="text-primary">{cert.name}</CardTitle>
                 <div className="flex items-center justify-between">
