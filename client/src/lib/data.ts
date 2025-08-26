@@ -85,7 +85,7 @@ export const portfolioData = {
     {
       name: "CEH v13 - Certified Ethical Hacker (Training)",
       issuer: "EC-Council",
-      date: "2024 - Ongoing",
+      date: "2025 - Ongoing",
       type: "Professional Training"
     },
     {
