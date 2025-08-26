@@ -6,7 +6,7 @@ export default function ProjectsSection() {
     <section id="projects" className="py-20 bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-primary mb-4">Featured Projects</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4 section-headline">Featured Projects</h2>
           <p className="text-xl text-muted-foreground">Innovative solutions in cybersecurity and technology</p>
         </div>
         

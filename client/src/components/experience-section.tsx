@@ -9,7 +9,7 @@ export default function ExperienceSection() {
     <section id="experience" className="py-20 bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-primary mb-4">Experience</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4 section-headline">Experience</h2>
           <p className="text-xl text-muted-foreground">Professional experience and internships</p>
         </div>
 

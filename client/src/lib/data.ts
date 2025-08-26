@@ -83,10 +83,10 @@ export const portfolioData = {
 
   certifications: [
     {
-      name: "CEH v13 - Certified Ethical Hacker",
+      name: "CEH v13 - Certified Ethical Hacker (Training)",
       issuer: "EC-Council",
-      date: "2024",
-      type: "Professional Certification"
+      date: "2024 - Ongoing",
+      type: "Professional Training"
     },
     {
       name: "Cybersecurity Job Simulation",
@@ -111,6 +111,54 @@ export const portfolioData = {
       issuer: "Udacity",
       date: "January 2025",
       type: "Course Completion"
+    },
+    {
+      name: "Google Cybersecurity Foundation",
+      issuer: "Google x Coursera",
+      date: "2024",
+      type: "Course Completion"
+    },
+    {
+      name: "Introduction to Cybersecurity",
+      issuer: "Cisco Networking Academy",
+      date: "September 2023",
+      type: "Badge Certification"
+    },
+    {
+      name: "Advent of Cyber",
+      issuer: "TryHackMe",
+      date: "December 2024",
+      type: "Challenge Completion"
+    },
+    {
+      name: "CyberWeek Challenge",
+      issuer: "CyberWeek Platform",
+      date: "2024",
+      type: "Competition"
+    },
+    {
+      name: "Hackers Meetup Participation",
+      issuer: "Local Cybersecurity Community",
+      date: "2024",
+      type: "Community Event"
+    },
+    {
+      name: "IIT Jammu CTF",
+      issuer: "IIT Jammu",
+      date: "2024",
+      type: "CTF Competition"
+    },
+    {
+      name: "SkillFront Technical Assessment",
+      issuer: "SkillFront",
+      date: "2024",
+      type: "Technical Certification"
+    },
+    {
+      name: "ECC Evaluation Certificate",
+      issuer: "ECC Council",
+      date: "2024",
+      type: "Assessment"
     }
   ],
 
@@ -122,10 +170,16 @@ export const portfolioData = {
       description: "Final year student specializing in cybersecurity and software development"
     },
     {
-      degree: "Research Intern",
-      institution: "NIT Rourkela",
-      period: "2024",
-      description: "Research in Python application security and automated vulnerability detection"
+      degree: "Intermediate (Science)",
+      institution: "Government Higher Secondary School, Rourkela",
+      period: "2019 - 2021",
+      description: "Science stream with focus on Mathematics and Computer Science"
+    },
+    {
+      degree: "High School (10th)", 
+      institution: "Government High School, Rourkela",
+      period: "2018 - 2019",
+      description: "Secondary education with excellent academic performance"
     }
   ],
 
@@ -134,6 +188,24 @@ export const portfolioData = {
       title: "Smart India Hackathon 2024",
       description: "Team Leader for SAMI18 Pole - Smart Agriculture Monitoring Network",
       year: "2024",
+      type: "Competition"
+    },
+    {
+      title: "Smart India Hackathon 2025",
+      description: "Internal Finalist - Advanced cybersecurity solutions development",
+      year: "2025",
+      type: "Competition"
+    },
+    {
+      title: "Smart India Hackathon 2023",
+      description: "Internal Winner - Innovative security framework implementation",
+      year: "2023",
+      type: "Competition"
+    },
+    {
+      title: "TCS HackQuest Season 9",
+      description: "Participant - Solved 7 complex cybersecurity challenges",
+      year: "2025",
       type: "Competition"
     },
     {

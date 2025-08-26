@@ -1,10 +1,11 @@
 import { Quote, Star, User } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import KaliLinuxImage from "./kali-linux-image";
 
 const testimonials = [
   {
-    name: "Dr. Rajesh Sharma",
-    position: "Senior Security Researcher",
+    name: "Dr. DP Mohapatra",
+    position: "Professor and Security Researcher",
     company: "NIT Rourkela",
     content: "Jyoti has demonstrated exceptional skills in Python security analysis during his research internship. His work on automated vulnerability detection using AST and CFG analysis was groundbreaking and showed deep understanding of code security principles.",
     rating: 5,
@@ -39,15 +40,6 @@ const testimonials = [
     category: "Certification"
   },
   {
-    name: "Mentor",
-    position: "TryHackMe Community",
-    company: "TryHackMe Platform",
-    content: "Active contributor to the cybersecurity learning community with consistent progress in practical cybersecurity challenges. Shows strong problem-solving skills and dedication to continuous learning in the field.",
-    rating: 5,
-    avatar: "💻",
-    category: "Community"
-  },
-  {
     name: "Project Supervisor",
     position: "Malware Analysis Lead",
     company: "GIET University",
@@ -63,7 +55,7 @@ export default function TestimonialsSection() {
     <section id="testimonials" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-primary mb-4">Professional Testimonials</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4 section-headline">Professional Testimonials</h2>
           <p className="text-xl text-muted-foreground">What colleagues and mentors say about my work</p>
         </div>
 
@@ -114,7 +106,13 @@ export default function TestimonialsSection() {
                 {/* Author Info */}
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-xl">
-                    {testimonial.avatar}
+                    {testimonial.name === "Project Supervisor" ? (
+                      <div className="scale-50">
+                        <KaliLinuxImage />
+                      </div>
+                    ) : (
+                      testimonial.avatar
+                    )}
                   </div>
                   <div className="flex-1">
                     <div className="font-semibold text-foreground">{testimonial.name}</div>

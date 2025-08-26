@@ -8,13 +8,13 @@ export default function AchievementsSection() {
     <section id="achievements" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-primary mb-4">Achievements</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4 section-headline">Achievements</h2>
           <p className="text-xl text-muted-foreground">Recognition and accomplishments</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {portfolioData.achievements.map((achievement, index) => (
-            <Card key={index} className="bg-card border-border card-hover" data-testid={`achievement-${index}`}>
+            <Card key={index} className="bg-card border-border card-flashy" data-testid={`achievement-${index}`}>
               <CardHeader>
                 <div className="flex items-start space-x-4">
                   <div className="bg-terminal-green p-3 rounded-lg">

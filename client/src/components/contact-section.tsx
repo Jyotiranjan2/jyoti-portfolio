@@ -62,7 +62,7 @@ export default function ContactSection() {
     <section id="contact" className="py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-primary mb-4">Let's Connect</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4 section-headline">Let's Connect</h2>
           <p className="text-xl text-muted-foreground">Ready to collaborate on cybersecurity projects</p>
         </div>
         

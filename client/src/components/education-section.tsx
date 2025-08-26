@@ -7,13 +7,13 @@ export default function EducationSection() {
     <section id="education" className="py-20 bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-primary mb-4">Education</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4 section-headline">Education</h2>
           <p className="text-xl text-muted-foreground">Academic background and research experience</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {portfolioData.education.map((edu, index) => (
-            <Card key={index} className="bg-card border-border card-hover" data-testid={`education-${index}`}>
+            <Card key={index} className="bg-card border-border card-flashy" data-testid={`education-${index}`}>
               <CardHeader>
                 <div className="flex items-start space-x-4">
                   <div className="bg-primary p-3 rounded-lg">
